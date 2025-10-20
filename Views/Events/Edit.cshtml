@@ -1,0 +1,50 @@
+@model EventManagement.ViewModels.EventViewModel
+
+@{
+    ViewData["Title"] = "Edit Event";
+}
+
+<h1 class="mb-4">Edit Event</h1>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label asp-for="Title" class="form-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="StartTime" class="form-label"></label>
+        <input asp-for="StartTime" type="datetime-local" class="form-control" value="@Model.StartTime.ToLocalTime().ToString("yyyy-MM-ddTHH:mm")" />
+        <span asp-validation-for="StartTime" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="EndTime" class="form-label"></label>
+        <input asp-for="EndTime" type="datetime-local" class="form-control" value="@Model.EndTime.ToLocalTime().ToString("yyyy-MM-ddTHH:mm")" />
+        <span asp-validation-for="EndTime" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="VenueId" class="form-label">Venue</label>
+        <select asp-for="VenueId" class="form-select" asp-items="@(new SelectList(Model.Venues, "Id", "Name", Model.VenueId))">
+            <option value="">-- Select Venue --</option>
+        </select>
+        <span asp-validation-for="VenueId" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary me-2">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

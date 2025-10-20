@@ -1,0 +1,17 @@
+@model EventManagement.Models.Event
+
+@{
+    ViewData["Title"] = "Event Details";
+}
+
+<h1 class="mb-4">@Model.Title</h1>
+
+<div class="card p-4 mb-3 shadow-sm">
+    <p><strong>Start Time:</strong> @Model.StartTime.ToLocalTime().ToString("f")</p>
+    <p><strong>End Time:</strong> @Model.EndTime.ToLocalTime().ToString("f")</p>
+    <p><strong>Venue:</strong> @Model.Venue?.Name</p>
+    <p><strong>Description:</strong> @Model.Description</p>
+</div>
+
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning me-2">Edit</a>
+<a asp-action="Index" class="btn btn-secondary">Back</a>

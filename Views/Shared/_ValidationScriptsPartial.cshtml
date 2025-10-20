@@ -1,0 +1,17 @@
+﻿@section Scripts {
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+                integrity="sha256-3fp6t+6w9C7rjWkYI1THdXxk3DtvPnlWl5QfvXDhOQo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.5/jquery.validate.min.js"
+                integrity="sha384-X5+VJ6+RbbG3X3vQyoq3A4m+1gA1RhG2nUeIo6nDZ+38EGSA+6KkEtD4Fvg5vGvI"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation.unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"
+                integrity="sha384-rxTCy+OqK8ONPV5x5+6HvgrvWQY3pGz/U4s9GAA+YdH6pC6bJ6Fy7Nly7yZee/9B"
+                crossorigin="anonymous"></script>
+    </environment>
+}
