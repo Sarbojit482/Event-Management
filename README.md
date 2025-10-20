@@ -13,7 +13,8 @@ Before we begin, we need to make sure we have installed:
 Open terminal and run
 git clone hhtps://github.com/Sarbojit482/Event-Management
 cd Event-Management
-or just create a mvc using dotnet new mvc (project name) and just copy the required files form the repo to the project
+
+Or just create a mvc using dotnet new mvc (project name) and just copy the required files form the repo to the project
 
 ### 3 Configuration database
 "ConnectionString":{
