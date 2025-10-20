@@ -16,14 +16,16 @@ cd Event-Management
 
 ### 3 Configuration database
 "ConnectionString":{
-"DefaultConnection": "Host=localhost;Database=EventmanagementDB;Username=postgres;Password=yourpassword"
+"DefaultConnection": "Host=localhost;Database=EventmanagementDB;Username=postgres;Password=yourpassword"}
 
 ### 4 Apply Database Migrations
 dotnet ef database update
 
 ### To Run the projects
 1.Open VS code or visual studio
+
 2.dotnet run
+
 3.open your browser and go to : https://localhost:"the port given"
 
 
