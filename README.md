@@ -39,3 +39,5 @@ dotnet ef database update
 <img width="1597" height="765" alt="Screenshot 2025-10-20 215340" src="https://github.com/user-attachments/assets/674c786c-5534-4faa-bc68-23c05ad079d2" />
 
 
+<img width="800" height="297" alt="Screenshot 2025-10-21 165433" src="https://github.com/user-attachments/assets/e522060a-31ae-4d0b-a204-23489d4bf502" />
+<img width="1357" height="214" alt="Screenshot 2025-10-21 165415" src="https://github.com/user-attachments/assets/67aacde3-3f28-4dd3-b1c4-3b7a9548202f" />
