@@ -2,14 +2,23 @@ Event Management System — .NET Project Documentation
 📘 Table of Contents
 
 1.Overview
+
 2.Features
+
 3.System Architecture
+
 4.Technology Stack
+
 5.Project Structure
+
 6.Setup and Installation
+
 7.Configuration
+
 8.Running the Application
+
 9.Future Enhancements
+
 10.License
 
 1. Overview
@@ -22,52 +31,32 @@ This system ensures secure role-based access and supports integrations with web 
 2. Features
 
 ✅ Admin-only Event Management – Only Admin users can create, edit, or delete events
+
 ✅ User Registration – Normal users can sign up and register for available events
+
 ✅ Event Browsing – All users can search and view public events
-✅ JWT Authentication – Secure login and token-based authorization
-✅ Logging and Exception Handling – Centralized error and log management
+
 ✅ Email Notifications (optional) – Registration confirmation emails
-✅ RESTful API Endpoints – For frontend or mobile app integration
+
 
 3. System Architecture
-┌─────────────────────────────┐
-│         Client UI           │
-│ (React / Angular / Flutter) │
-└────────────┬────────────────┘
-             │
-             ▼
-┌─────────────────────────────┐
-│   ASP.NET Core 8 Web API    │
-│ ─ Authentication (JWT)      │
-│ ─ Controllers (Admin, User) │
-│ ─ Services (Business Logic) │
-│ ─ Repository (Data Access)  │
-└────────────┬────────────────┘
-             │
-┌────────────▼───────────────┐
-│        SQL Server DB       │
-│   Events, Users, Roles     │
-└────────────────────────────┘
+   
+<img width="288" height="443" alt="Screenshot 2025-10-29 210627" src="https://github.com/user-attachments/assets/89e34f41-af52-4b2f-9882-6c6f6f3c9072" />
+
 
 4. Technology Stack
+   
 Backend	ASP.NET Core 8.0
+
 Database	PostgresSQL 
+
 ORM	Entity Framework Core
 
 5. Project Structure
-EventManagement/
-│
-├── EventManagement.API/
-│   ├── Controllers/
-│   │   ├── EventsController.cs
-│   ├── Models/
-│   │   ├── Event.cs
-│   │   ├── Venue.cs
-│   │   └── ApplicationDbContext.cs
-│   ├── Program.cs
-│   └── appsettings.json
+<img width="305" height="289" alt="Screenshot 2025-10-29 210733" src="https://github.com/user-attachments/assets/afc67971-9c2a-4b2e-9149-4027ffdc5beb" />
 
-7. Setup and Installation
+6. Setup and Installation
+   
 Prerequisites
 
 .NET SDK 8.0+
@@ -102,7 +91,7 @@ Build and run:
 
 dotnet run --project EventManagement.API
 
-8. Configuration
+7. Configuration
 appsettings.json Example:
 {
   "ConnectionStrings": {
@@ -119,13 +108,13 @@ appsettings.json Example:
 }
 
 
-9. Running the Application
+8. Running the Application
 
 After starting, the API will be available at:
 👉 https://localhost:5001/swagger
 
 
-17. Future Enhancements
+9. Future Enhancements
 
 Event categories and tags
 
@@ -137,6 +126,7 @@ QR-code-based ticket verification
 
 Notifications (SMS / Email reminders)
 
-18. License
+10. License
 
-This project is licensed under the MIT License.
+
+This project is licensed under the Apache 2.0 License.
