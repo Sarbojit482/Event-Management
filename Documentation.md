@@ -22,14 +22,14 @@ Event Management System — .NET Project Documentation
 
 10.License
 
-1. Overview
+### 1. Overview
 
 The Event Management System is a .NET Core web API that allows administrators to create and manage events, while users can browse, view details, and register for them.
 Only users with the Admin role are authorized to add, update, or delete events.
 
 This system ensures secure role-based access and supports integrations with web and mobile clients.
 
-2. Features
+### 2. Features
 
 ✅ Admin-only Event Management – Only Admin users can create, edit, or delete events
 
@@ -40,12 +40,12 @@ This system ensures secure role-based access and supports integrations with web 
 ✅ Email Notifications (optional) – Registration confirmation emails
 
 
-3. System Architecture
+### 3. System Architecture
    
 <img width="288" height="443" alt="Screenshot 2025-10-29 210627" src="https://github.com/user-attachments/assets/89e34f41-af52-4b2f-9882-6c6f6f3c9072" />
 
 
-4. Technology Stack
+### 4. Technology Stack
    
 Backend	ASP.NET Core 8.0
 
@@ -53,10 +53,10 @@ Database	PostgresSQL
 
 ORM	Entity Framework Core
 
-5. Project Structure
+### 5. Project Structure
 <img width="305" height="289" alt="Screenshot 2025-10-29 210733" src="https://github.com/user-attachments/assets/afc67971-9c2a-4b2e-9149-4027ffdc5beb" />
 
-6. Setup and Installation
+### 6. Setup and Installation
    
 Prerequisites
 
@@ -92,7 +92,7 @@ Build and run:
 
 dotnet run --project EventManagement.API
 
-7. Configuration
+### 7. Configuration
 appsettings.json Example:
 
 {
@@ -122,13 +122,13 @@ appsettings.json Example:
 }
 
 
-9. Running the Application
+### 8. Running the Application
 
 After starting, the API will be available at:
 👉 https://localhost:5001/swagger
 
 
-9. Future Enhancements
+### 9. Future Enhancements
 
 Event categories and tags
 
@@ -140,9 +140,10 @@ QR-code-based ticket verification
 
 Notifications (SMS / Email reminders)
 
-10. License
+### 10. License
 
 
 This project is licensed under the Apache 2.0 License.
+
 
 
