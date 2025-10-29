@@ -93,22 +93,35 @@ dotnet run --project EventManagement.API
 
 7. Configuration
 appsettings.json Example:
+
 {
+
   "ConnectionStrings": {
+  
     "DefaultConnection": "Host=localhost;Port=5432;Database=event_management_db;Username=postgres;Password=Password"
+    
   },
+  
   "Logging": {
+  
     "LogLevel": {
+     
       "Default": "Information",
+     
       "Microsoft": "Warning",
+     
       "Microsoft.Hosting.Lifetime": "Information"
+   
     }
-  },
+ 
+ },
+  
   "AllowedHosts": "*"
+
 }
 
 
-8. Running the Application
+9. Running the Application
 
 After starting, the API will be available at:
 👉 https://localhost:5001/swagger
@@ -130,3 +143,4 @@ Notifications (SMS / Email reminders)
 
 
 This project is licensed under the Apache 2.0 License.
+
