@@ -1,4 +1,5 @@
 Event Management System — .NET Project Documentation
+
 📘 Table of Contents
 
 1.Overview
@@ -143,4 +144,5 @@ Notifications (SMS / Email reminders)
 
 
 This project is licensed under the Apache 2.0 License.
+
 
